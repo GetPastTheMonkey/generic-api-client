@@ -1,0 +1,33 @@
+{
+  "name": "@getpastthemonkey/generic-api-client",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A generic API client for asynchronously calling REST APIs using Axios",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GetPastTheMonkey/generic-api-client.git"
+  },
+  "author": "Sven Grübel <sven@gruebel.dev> (https://gruebel.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GetPastTheMonkey/generic-api-client/issues"
+  },
+  "homepage": "https://github.com/GetPastTheMonkey/generic-api-client#readme",
+
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  },
+
+  "main": "dist/GenericApiClient.js",
+  "types": "dist/GenericApiClient.d.ts",
+  "files": ["dist"]
+}
