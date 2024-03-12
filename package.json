@@ -1,10 +1,9 @@
 {
   "name": "@getpastthemonkey/generic-api-client",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "description": "A generic API client for asynchronously calling REST APIs using Axios",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GetPastTheMonkey/generic-api-client.git"
@@ -15,7 +14,6 @@
     "url": "https://github.com/GetPastTheMonkey/generic-api-client/issues"
   },
   "homepage": "https://github.com/GetPastTheMonkey/generic-api-client#readme",
-
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,8 +24,9 @@
   "devDependencies": {
     "typescript": "^5.4.2"
   },
-
   "main": "dist/GenericApiClient.js",
   "types": "dist/GenericApiClient.d.ts",
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
