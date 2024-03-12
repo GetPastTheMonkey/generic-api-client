@@ -25,7 +25,7 @@
 import axios, {Method} from "axios";
 
 export class GenericApiClient {
-    private static baseUrl: string = "";
+    protected static baseUrl: string = "";
 
     public static setBaseUrl(baseUrl: string): void {
         GenericApiClient.baseUrl = baseUrl;
