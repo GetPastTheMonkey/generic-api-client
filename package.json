@@ -1,7 +1,7 @@
 {
   "name": "@getpastthemonkey/generic-api-client",
   "private": false,
-  "version": "1.1.1",
+  "version": "1.1.2",
   "type": "module",
   "description": "A generic API client for asynchronously calling REST APIs using Axios",
   "repository": {
