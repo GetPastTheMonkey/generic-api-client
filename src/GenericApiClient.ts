@@ -54,6 +54,10 @@ export class GenericApiClient {
         return GenericApiClient.request<P, D, R>("PATCH", url, queryParams, data);
     }
 
+    protected static async put<P, D, R>(url: string, queryParams: P, data: D): Promise<R> {
+        return GenericApiClient.request<P, D, R>("PUT", url, queryParams, data);
+    }
+
     protected static async delete<P, R>(url: string, queryParams: P): Promise<R> {
         return GenericApiClient.request<P, null, R>("DELETE", url, queryParams, null);
     }
