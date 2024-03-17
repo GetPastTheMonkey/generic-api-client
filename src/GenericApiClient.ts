@@ -22,13 +22,18 @@
  * SOFTWARE.
  ********************************************************************************/
 
-import axios, {AxiosResponse, Method} from "axios";
+import axios, {AxiosResponse, Method, RawAxiosRequestHeaders, RawAxiosResponseHeaders} from "axios";
 
 export class GenericApiClient {
     protected static baseUrl: string = "";
+    protected static headers: RawAxiosRequestHeaders = {};
 
     public static setBaseUrl(baseUrl: string): void {
         this.baseUrl = baseUrl;
+    }
+
+    public static setHeaders(headers: RawAxiosResponseHeaders): void {
+        this.headers = headers;
     }
 
     private static async request<P, D, R>(method: Method, url: string, queryParams: P, data: D): Promise<R> {
@@ -36,6 +41,7 @@ export class GenericApiClient {
             url: url,
             method: method,
             baseURL: this.baseUrl,
+            headers: this.headers,
             params: queryParams,
             data: data,
             withCredentials: true,
