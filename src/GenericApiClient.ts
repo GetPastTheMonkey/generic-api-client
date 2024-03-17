@@ -22,7 +22,7 @@
  * SOFTWARE.
  ********************************************************************************/
 
-import axios, {Method} from "axios";
+import axios, {AxiosResponse, Method} from "axios";
 
 export class GenericApiClient {
     protected static baseUrl: string = "";
@@ -39,7 +39,7 @@ export class GenericApiClient {
             params: queryParams,
             data: data,
             withCredentials: true,
-        });
+        }).then((response: AxiosResponse<R, D>) => response.data);
     }
 
     protected static async get<P, R>(url: string, queryParams: P): Promise<R> {
