@@ -23,6 +23,7 @@
  ********************************************************************************/
 
 import axios, {AxiosResponse, Method, RawAxiosRequestHeaders, RawAxiosResponseHeaders} from "axios";
+export {AxiosError} from "axios";
 
 export class GenericApiClient {
     protected static baseUrl: string = "";
