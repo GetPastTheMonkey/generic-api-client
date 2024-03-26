@@ -22,7 +22,7 @@
     "axios": "^1.6.8"
   },
   "devDependencies": {
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "main": "dist/GenericApiClient.js",
   "types": "dist/GenericApiClient.d.ts",
